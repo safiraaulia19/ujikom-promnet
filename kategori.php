@@ -8,7 +8,7 @@
     // var conn = fungsi koneksi("nama_host", "username", "password", "nama_db");
     // cara cek username di db mysql dengan CMD --> select user();
     require("function.php");
-    $jumlahDataPerHalaman = 5;
+    $jumlahDataPerHalaman = 4;
    $query = query("SELECT * FROM kategori");
    $kategori = $query;
 
@@ -220,7 +220,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./index2.html" class="nav-link">
+                    <a href="kategori.php" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Data Kategori</p>
                     </a>
@@ -264,7 +264,7 @@
               </div> 
               <div class="col-sm-4 d-flex flex-column align-items-end">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                   <li class="breadcrumb-item active" aria-current="page">Data Buku</li>
                 </ol>
                 <form class="mt-2" action="" method="POST">
