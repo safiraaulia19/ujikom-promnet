@@ -26,7 +26,7 @@ function tambah_data($data){
     $tahun= $data['tahun_terbit'];
     // $gambar = $data['gambar'];
     // upload gambar
-    $cover = upload_gambar($judul);  // outputnya adalah nim_nama.eksentsi
+    $cover = upload_gambar($judul);  
     if( !$cover ) {
         return false;
     }
@@ -166,7 +166,7 @@ function search_data($keyword){
 function categories() {
     global $conn;
     
-    $query = "SELECT id_kategori, nama_kategori FROM kategori ORDER BY nama_kategori ASC";
+    $query = "SELECT id_kategori, nama_kategori FROM kategori ORDER BY nama_kategori DESC";
     
     return query($query); 
 }
